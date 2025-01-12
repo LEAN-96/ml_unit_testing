@@ -49,9 +49,9 @@ python -m unittest -v tests/test_model.py
 
 # Run specific test case
 python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_accuracy_and_confusion_matrix
+```
 
 ### Running Online
-
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LEAN-96/ml_unit_testing/HEAD)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/notebooks/ML_Unit_Testing.ipynb)
@@ -76,7 +76,7 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 
 # Run tests
 !python -m unittest -v tests/test_model.py
-
+```
 
 ## Project Requirements Implementation
 
@@ -105,14 +105,13 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
   - Consistent performance
   - Proper logging
 
-## Expected results
+## Expected Results
 
 ### Key Metrics Achieved
 - Training Accuracy: 97.00%
 - Test Accuracy: 96.67%
 - Baseline Runtime: ~0.011 seconds
 - Test Runtime: ~0.010 seconds
-
 
 You should see output similar to:
 
