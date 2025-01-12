@@ -114,6 +114,7 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 - Test Runtime: ~0.010 seconds
 
 You should see output similar to:
+```
 
 === Training Set Performance ===
 Training Accuracy: 0.9700
@@ -134,3 +135,4 @@ Classification Report:
     accuracy                           0.97       300
    macro avg       0.97      0.97      0.97       300
 weighted avg       0.97      0.97      0.97       300
+```
