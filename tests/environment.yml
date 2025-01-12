@@ -1,0 +1,10 @@
+# environment.yml
+name: ml_unit_testing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas
+  - numpy
+  - scikit-learn
+  - pytest
