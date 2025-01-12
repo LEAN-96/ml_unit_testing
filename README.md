@@ -8,7 +8,8 @@ This project demonstrates unit testing for machine learning models, focusing on 
 ```
 ml_unit_testing/
 ├── data/                # Data directory
-│   └── Advertising.csv  # Test dataset
+│   └── Advertising.csv  # Dataset
+│   └── test_data        # Test dataset
 ├── src/                 # Source code
 │   ├── __init__.py
 │   ├── decorators.py    # Timer and logger decorators
@@ -16,8 +17,6 @@ ml_unit_testing/
 ├── tests/               # Test directory
 │   ├── __init__.py
 │   └── test_model.py    # Unit tests implementation
-├── notebooks/           # Jupyter notebooks
-│   └── ML_Unit_Testing.ipynb  # Interactive demo
 ├── requirements.txt     # Project dependencies
 └── README.md            # Project documentation
 ```
@@ -50,22 +49,22 @@ python -m unittest -v tests/test_model.py
 
 # Run specific test case
 python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_accuracy_and_confusion_matrix
-```
 
 ### Running Online
+
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LEAN-96/ml_unit_testing/HEAD)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/notebooks/ML_Unit_Testing.ipynb)
 
-#### Option 1: Run in MyBinder
-1. Click the "launch binder" badge above.
-2. Wait for the environment to build (this may take a few minutes).
-3. Navigate to `notebooks/ML_Unit_Testing.ipynb`.
-4. Run the notebook to see test results.
+### Option 1: Run in MyBinder
+1. Click the "launch binder" badge above
+2. Wait for the environment to build (this may take a few minutes)
+3. Navigate to `notebooks/ML_Unit_Testing.ipynb`
+4. Run the notebook to see test results
 
-#### Option 2: Run in Google Colab
-1. Click the "Open in Colab" badge above.
-2. The notebook will open in Google Colab.
+### Option 2: Run in Google Colab
+1. Click the "Open in Colab" badge above
+2. The notebook will open in Google Colab
 3. Run the following setup code:
 ```python
 # Clone repository
@@ -77,46 +76,46 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 
 # Run tests
 !python -m unittest -v tests/test_model.py
-```
+
 
 ## Project Requirements Implementation
 
 ### Requirement 1: Prediction Function Testing ✅
-**Test Case: `test_predict_accuracy_and_confusion_matrix()`**
-- **Purpose:** Validate model's prediction accuracy.
-- **Implementation:**
-  - Calculate accuracy score.
-  - Generate confusion matrix.
-  - Store test data separately.
-  - Compare training vs test performance.
-- **Success Criteria:**
-  - Accuracy > 70%.
-  - Balanced confusion matrix.
-  - No significant overfitting.
+**Test Case: test_predict_accuracy_and_confusion_matrix()**
+- Purpose: Validate model's prediction accuracy
+- Implementation:
+  - Calculate accuracy score
+  - Generate confusion matrix
+  - Store test data separately
+  - Compare training vs test performance
+- Success Criteria:
+  - Accuracy > 70%
+  - Balanced confusion matrix
+  - No significant overfitting
 
 ### Requirement 2: Runtime Performance Testing ✅
-**Test Case: `test_fit_runtime()`**
-- **Purpose:** Monitor training function performance.
-- **Implementation:**
-  - Log baseline runtime.
-  - Compare test runtime.
-  - Implement performance threshold.
-- **Success Criteria:**
-  - Test runtime ≤ 120% of baseline.
-  - Consistent performance.
-  - Proper logging.
+**Test Case: test_fit_runtime()**
+- Purpose: Monitor training function performance
+- Implementation:
+  - Log baseline runtime
+  - Compare test runtime
+  - Implement performance threshold
+- Success Criteria:
+  - Test runtime ≤ 120% of baseline
+  - Consistent performance
+  - Proper logging
 
-## Expected Results
+## Expected results
 
 ### Key Metrics Achieved
-- **Training Accuracy:** 97.00%
-- **Test Accuracy:** 96.67%
-- **Baseline Runtime:** ~0.011 seconds
-- **Test Runtime:** ~0.010 seconds
+- Training Accuracy: 97.00%
+- Test Accuracy: 96.67%
+- Baseline Runtime: ~0.011 seconds
+- Test Runtime: ~0.010 seconds
+
 
 You should see output similar to:
 
-```
 === Training Set Performance ===
 Training Accuracy: 0.9700
 Training Confusion Matrix:
@@ -136,4 +135,3 @@ Classification Report:
     accuracy                           0.97       300
    macro avg       0.97      0.97      0.97       300
 weighted avg       0.97      0.97      0.97       300
-```
