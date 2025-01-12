@@ -54,7 +54,7 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 ### Running Online
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LEAN-96/ml_unit_testing/HEAD)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/tests/test_model.py)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/notebooks/ML_Unit_Testing.ipynb)
 
 ### Option 1: Run in MyBinder
 1. Click the "launch binder" badge above
@@ -77,6 +77,14 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 # Run tests
 !python -m unittest -v tests/test_model.py
 ```
+
+### Option: Manual Setup Colab
+1.	Go to Google Colab
+2.	File → Open notebook
+3.	GitHub tab
+4.	Enter repository URL: https://github.com/LEAN-96/ml_unit_testing
+5.	Select notebooks/ML_Unit_Testing.ipynb
+
 
 ## Project Requirements Implementation
 
