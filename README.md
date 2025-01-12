@@ -54,7 +54,7 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 ### Running Online
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LEAN-96/ml_unit_testing/HEAD)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/notebooks/ML_Unit_Testing.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LEAN-96/ml_unit_testing/blob/main/tests/test_model.py)
 
 ### Option 1: Run in MyBinder
 1. Click the "launch binder" badge above
