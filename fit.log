@@ -357,3 +357,141 @@ weighted avg       0.97      0.97      0.97       300
 INFO:root:Accuracy difference (train-test): 0.0033
 INFO:root:Test suite completed at 2025-01-12 18:54:31.771123+00:00
 
+INFO:root:Current Date and Time (UTC): 2025-01-12 19:45:16.349202+00:00
+INFO:root:Current User's Login: LEAN-96
+INFO:root:Test data saved to data/test_data.csv
+INFO:root:
+=== Starting fit runtime test ===
+INFO:root:Running fit with args: (<src.model.CustomLogisticRegression object at 0x137b3a250>,      Daily Time Spent on Site  Age  Area Income  Daily Internet Usage  Male
+541                     75.65   39     64021.55                247.90     1
+440                     46.04   32     65499.93                147.92     0
+482                     69.42   25     65791.17                213.38     0
+422                     53.38   35     60803.37                120.06     1
+778                     52.67   44     14775.50                191.26     0
+..                        ...  ...          ...                   ...   ...
+106                     72.23   25     46557.92                241.03     1
+270                     44.49   53     63100.13                168.00     1
+860                     91.37   45     51920.49                182.65     1
+435                     56.66   42     72684.44                139.42     0
+102                     89.91   40     59593.56                194.23     0
+
+[700 rows x 5 columns], 541    0
+440    1
+482    0
+422    1
+778    1
+      ..
+106    0
+270    1
+860    1
+435    1
+102    0
+Name: Clicked on Ad, Length: 700, dtype: int64), kwargs: {}
+INFO:root:Baseline fit runtime: 0.0063 seconds
+INFO:root:Running fit with args: (<src.model.CustomLogisticRegression object at 0x137b3a250>,      Daily Time Spent on Site  Age  Area Income  Daily Internet Usage  Male
+541                     75.65   39     64021.55                247.90     1
+440                     46.04   32     65499.93                147.92     0
+482                     69.42   25     65791.17                213.38     0
+422                     53.38   35     60803.37                120.06     1
+778                     52.67   44     14775.50                191.26     0
+..                        ...  ...          ...                   ...   ...
+106                     72.23   25     46557.92                241.03     1
+270                     44.49   53     63100.13                168.00     1
+860                     91.37   45     51920.49                182.65     1
+435                     56.66   42     72684.44                139.42     0
+102                     89.91   40     59593.56                194.23     0
+
+[700 rows x 5 columns], 541    0
+440    1
+482    0
+422    1
+778    1
+      ..
+106    0
+270    1
+860    1
+435    1
+102    0
+Name: Clicked on Ad, Length: 700, dtype: int64), kwargs: {}
+INFO:root:Test fit runtime: 0.0052 seconds
+INFO:root:Maximum acceptable runtime (120%): 0.0075 seconds
+INFO:root:
+=== Starting prediction accuracy test ===
+INFO:root:Running fit with args: (<src.model.CustomLogisticRegression object at 0x137b3a250>,      Daily Time Spent on Site  Age  Area Income  Daily Internet Usage  Male
+541                     75.65   39     64021.55                247.90     1
+440                     46.04   32     65499.93                147.92     0
+482                     69.42   25     65791.17                213.38     0
+422                     53.38   35     60803.37                120.06     1
+778                     52.67   44     14775.50                191.26     0
+..                        ...  ...          ...                   ...   ...
+106                     72.23   25     46557.92                241.03     1
+270                     44.49   53     63100.13                168.00     1
+860                     91.37   45     51920.49                182.65     1
+435                     56.66   42     72684.44                139.42     0
+102                     89.91   40     59593.56                194.23     0
+
+[700 rows x 5 columns], 541    0
+440    1
+482    0
+422    1
+778    1
+      ..
+106    0
+270    1
+860    1
+435    1
+102    0
+Name: Clicked on Ad, Length: 700, dtype: int64), kwargs: {}
+INFO:root:Running predict with args: (<src.model.CustomLogisticRegression object at 0x137b3a250>,      Daily Time Spent on Site  Age  Area Income  Daily Internet Usage  Male
+541                     75.65   39     64021.55                247.90     1
+440                     46.04   32     65499.93                147.92     0
+482                     69.42   25     65791.17                213.38     0
+422                     53.38   35     60803.37                120.06     1
+778                     52.67   44     14775.50                191.26     0
+..                        ...  ...          ...                   ...   ...
+106                     72.23   25     46557.92                241.03     1
+270                     44.49   53     63100.13                168.00     1
+860                     91.37   45     51920.49                182.65     1
+435                     56.66   42     72684.44                139.42     0
+102                     89.91   40     59593.56                194.23     0
+
+[700 rows x 5 columns]), kwargs: {}
+INFO:root:Running predict with args: (<src.model.CustomLogisticRegression object at 0x137b3a250>,      Daily Time Spent on Site  Age  Area Income  Daily Internet Usage  Male
+521                     63.26   29     54787.37                120.46     1
+737                     71.23   52     41521.28                122.59     0
+740                     43.63   38     61757.12                135.25     1
+660                     42.04   49     67323.00                182.11     0
+411                     78.68   29     66225.72                208.05     0
+..                        ...  ...          ...                   ...   ...
+468                     65.59   47     28265.81                121.81     0
+935                     83.98   36     68305.91                194.62     0
+428                     60.53   29     56759.48                123.28     0
+7                       66.00   48     24593.33                131.76     1
+155                     87.98   38     56637.59                222.11     1
+
+[300 rows x 5 columns]), kwargs: {}
+INFO:root:
+=== Training Set Performance ===
+INFO:root:Training Accuracy: 0.9000
+INFO:root:Training Confusion Matrix:
+[[327  27]
+ [ 43 303]]
+INFO:root:
+=== Test Set Performance ===
+INFO:root:Test Accuracy: 0.8967
+INFO:root:Test Confusion Matrix:
+[[140   6]
+ [ 25 129]]
+INFO:root:Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.96      0.90       146
+           1       0.96      0.84      0.89       154
+
+    accuracy                           0.90       300
+   macro avg       0.90      0.90      0.90       300
+weighted avg       0.90      0.90      0.90       300
+
+INFO:root:Accuracy difference (train-test): 0.0033
+INFO:root:Test suite completed at 2025-01-12 19:45:16.376357+00:00
+

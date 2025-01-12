@@ -10,6 +10,8 @@ ml_unit_testing/
 ├── data/                # Data directory
 │   └── Advertising.csv  # Dataset
 │   └── test_data        # Test dataset
+├──notebooks/
+│   └──ML_Unit_Testing.ipynb # Notebook for Colab or Mybinder
 ├── src/                 # Source code
 │   ├── __init__.py
 │   ├── decorators.py    # Timer and logger decorators
@@ -116,31 +118,33 @@ python -m unittest tests.test_model.TestCustomLogisticRegression.test_predict_ac
 ## Expected Results
 
 ### Key Metrics Achieved
-- Training Accuracy: 97.00%
-- Test Accuracy: 96.67%
-- Baseline Runtime: ~0.011 seconds
-- Test Runtime: ~0.010 seconds
+- Training Accuracy: 90.00%
+- Test Accuracy: 89.67%
+- Baseline Runtime: ~0.0063 seconds
+- Test Runtime: ~0.0052 seconds
 
 You should see output similar to:
 ```
 
 === Training Set Performance ===
-Training Accuracy: 0.9700
+Training Accuracy: 0.9000
 Training Confusion Matrix:
-[[346   8]
- [ 13 333]]
+[[327  27]
+ [ 43 303]]
 
 === Test Set Performance ===
-Test Accuracy: 0.9667
+Test Accuracy: 0.8967
 Test Confusion Matrix:
-[[142   4]
- [  6 148]]
+[[140   6]
+ [ 25 129]]
 
 Classification Report:
               precision    recall  f1-score   support
-           0       0.96      0.97      0.97       146
-           1       0.97      0.96      0.97       154
-    accuracy                           0.97       300
-   macro avg       0.97      0.97      0.97       300
-weighted avg       0.97      0.97      0.97       300
+
+           0       0.85      0.96      0.90       146
+           1       0.96      0.84      0.89       154
+
+    accuracy                           0.90       300
+   macro avg       0.90      0.90      0.90       300
+weighted avg       0.90      0.90      0.90       300
 ```

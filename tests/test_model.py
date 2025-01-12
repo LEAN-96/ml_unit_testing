@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import time
 import logging
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from src.model import CustomLogisticRegression
 
 # Configure logging with timestamp and more detailed format
@@ -20,7 +20,7 @@ class TestCustomLogisticRegression(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """Set up test data once for all test methods."""
-        logging.info(f"Current Date and Time (UTC): {datetime.now(UTC)}")
+        logging.info(f"Current Date and Time (UTC): {datetime.now(timezone.utc)}")
         logging.info(f"Current User's Login: LEAN-96")
         
         # Load and prepare data
@@ -120,7 +120,7 @@ class TestCustomLogisticRegression(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        logging.info(f"Test suite completed at {datetime.now(UTC)}\n")
+        logging.info(f"Test suite completed at {datetime.now(timezone.utc)}\n")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
